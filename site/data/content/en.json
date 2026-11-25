@@ -1,0 +1,68 @@
+{
+  "lang": "en-GB",
+  "template_note": "Every value in square brackets is a placeholder for the owner to replace. Nothing here is a real business, person, place, price or contact.",
+  "site": {
+    "name": "[Firm name]",
+    "title": "[Firm name]: man and van moving (template)",
+    "description": "A template site for a small man-and-van moving firm. Every name, place, price and contact is a placeholder until the owner supplies the real details."
+  },
+  "demo_band": "Demo site: made-up business, placeholder details",
+  "nav": {"services": "What we move", "how": "How it works", "quote": "Get a quote"},
+  "hero": {
+    "kicker": "Man and van, [Area you cover]",
+    "heading": "Moving a few things, a flat or a whole house?",
+    "lead": "A small family firm with a van and a pair of careful hands. See what fits in the van, then ask for a quote.",
+    "cta": "Get a quote"
+  },
+  "van": {
+    "title": "The side of the van",
+    "desc": "A drawing of a removal van. The firm's name is on the panel, and the load space is split to show roughly what each kind of move takes up.",
+    "panel_name": "[Firm name]",
+    "panel_line": "[Phone number]",
+    "loads": [
+      {"id": "small", "label": "A small load", "note": "a few items", "share": 0.25},
+      {"id": "flat", "label": "A flat", "note": "about half the van", "share": 0.5},
+      {"id": "house", "label": "A house", "note": "the whole van, or [more trips]", "share": 1.0}
+    ],
+    "caption": "A rough guide to what fits, not a measurement. The owner sets the van's real size."
+  },
+  "services": {
+    "heading": "What we move",
+    "items": [
+      {"title": "Single items", "text": "A sofa, a fridge, a wardrobe or a bike: one thing from one place to another."},
+      {"title": "Flat moves", "text": "Boxes, furniture and the odd awkward lamp, up and down the stairs."},
+      {"title": "House moves", "text": "A whole home, in one trip or several, on a day that suits you."},
+      {"title": "Packing", "text": "Boxes and packing on the day, if you want a hand with it."},
+      {"title": "Clearances", "text": "Clearing out a loft, a garage or a room you are not keeping."}
+    ],
+    "price_line": "Prices from [£ from]. The owner sets the real prices.",
+    "cover_note": "Insurance and licences: [details to be supplied by the owner]."
+  },
+  "how": {
+    "heading": "How it works",
+    "steps": [
+      "Tell us what you are moving and where, with the quote form.",
+      "We reply with a price and a day that suits you.",
+      "On the day we load, drive and unload."
+    ]
+  },
+  "quote": {
+    "heading": "Get a quote",
+    "demo_note": "Demo: this form does not send yet.",
+    "fields": [
+      {"id": "q-what", "label": "What are you moving?", "type": "select", "options": ["A small load", "A flat", "A house", "Something else"]},
+      {"id": "q-from", "label": "Moving from (town or postcode)", "type": "text"},
+      {"id": "q-to", "label": "Moving to (town or postcode)", "type": "text"},
+      {"id": "q-when", "label": "When?", "type": "date"},
+      {"id": "q-name", "label": "Your name", "type": "text"},
+      {"id": "q-contact", "label": "Phone or email", "type": "text"},
+      {"id": "q-more", "label": "Anything else we should know?", "type": "textarea"}
+    ],
+    "button": "Send (demo, sends nothing)",
+    "contact_heading": "Or get in touch",
+    "contact": ["[Phone number]", "[Email address]", "[Area you cover]"]
+  },
+  "footer": {
+    "about": "A template from the Sovereign Website pipeline. A real firm's site is made from a copy once the owner agrees and supplies the details."
+  }
+}

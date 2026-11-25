@@ -3,68 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Man and van moving (demo)</title>
-<meta name="description" content="A demo site for a small family moving service: placeholder content until the owner supplies the details.">
+<title>[Firm name]: man and van moving (template)</title>
+<meta name="description" content="A template site for a small man-and-van moving firm. Every name, place, price and contact is a placeholder until the owner supplies the real details.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Man and van moving (demo)">
+<meta property="og:site_name" content="[Firm name]: man and van moving (template)">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://moving-van.business.sovereignweb.site/">
-<meta property="og:title" content="Man and van moving (demo)">
-<meta property="og:description" content="A demo site for a small family moving service: placeholder content until the owner supplies the details.">
+<meta property="og:title" content="[Firm name]: man and van moving (template)">
+<meta property="og:description" content="A template site for a small man-and-van moving firm. Every name, place, price and contact is a placeholder until the owner supplies the real details.">
 <meta property="og:image" content="https://moving-van.business.sovereignweb.site/assets/share/card-1200x630.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Man and van moving (demo)">
+<meta property="og:image:alt" content="[Firm name]: man and van moving (template)">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Man and van moving (demo)">
-<meta name="twitter:description" content="A demo site for a small family moving service: placeholder content until the owner supplies the details.">
+<meta name="twitter:title" content="[Firm name]: man and van moving (template)">
+<meta name="twitter:description" content="A template site for a small man-and-van moving firm. Every name, place, price and contact is a placeholder until the owner supplies the real details.">
 <meta name="twitter:image" content="https://moving-van.business.sovereignweb.site/assets/share/card-1200x630.jpg">
 <link rel="canonical" href="https://moving-van.business.sovereignweb.site/">
-<style>
-:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#5d5c57;--accent:#2f6b4f;--line:#e4e1d8}
-@media (prefers-color-scheme:dark){:root{--bg:#141513;--fg:#ecebe6;--muted:#a8a69e;--accent:#7fc3a0;--line:#2c2d29}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
-main{max-width:44rem;margin:0 auto;padding:10vh 1rem 4rem}
-.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem}
-.mark{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
-h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:.4rem 0 1rem}
-p{color:var(--muted);margin:0 0 1rem}a{color:var(--accent)}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
-/* The Sovereign Website credit on a customer's site: one small, muted control at the far top right that opens a
-   pop-up menu of the family links. Not a strip and not a menu bar: the site is about its owner (Dinis, 20 November
-   2026: "It needs to fundamentally be about the site and who is it about ... top right pop-up menu").
-   CSS only (details/summary), so no script and no CSP issue. It sits in the page's corner, above the owner's header;
-   a site whose own header uses that corner moves it with --family-top / --family-right.
-   To remove it, the owner sets one attribute: <html data-family-credit="off">. */
-.family-credit{--fam-fg:var(--family-fg,#5a5a5a);--fam-strong:var(--family-fg-strong,#111);--fam-bg:var(--family-bg,#fff);
-  position:absolute;top:var(--family-top,.4rem);right:var(--family-right,.75rem);z-index:50;font-size:.75rem;line-height:1.4}
-@media (prefers-color-scheme:dark){.family-credit{--fam-fg:var(--family-fg,#b5b5b5);--fam-strong:var(--family-fg-strong,#fff);--fam-bg:var(--family-bg,#1c1c1c)}}
-.family-credit summary{display:inline-flex;align-items:center;gap:.3rem;cursor:pointer;color:var(--fam-fg);list-style:none;min-height:24px;padding:.15rem .3rem;border-radius:4px}
-.family-credit summary::-webkit-details-marker{display:none}
-.family-credit summary::after{content:"";width:.35rem;height:.35rem;border:solid currentColor;border-width:0 1px 1px 0;transform:rotate(45deg) translateY(-2px)}
-.family-credit summary:hover,.family-credit summary:focus-visible,.family-credit[open] summary{color:var(--fam-strong)}
-.family-credit ul{position:absolute;right:0;top:100%;margin:.25rem 0 0;padding:.35rem 0;list-style:none;min-width:11rem;
-  background:var(--fam-bg);border:1px solid rgba(127,127,127,.3);border-radius:6px;box-shadow:0 4px 16px rgba(0,0,0,.12)}
-.family-credit a{display:block;padding:.3rem .8rem;min-height:24px;color:var(--fam-fg);text-decoration:none}
-.family-credit a:hover,.family-credit a:focus-visible{color:var(--fam-strong);background:rgba(127,127,127,.1)}
-.family-credit .family-gap{border-bottom:1px solid rgba(127,127,127,.25);padding-bottom:.3rem;margin-bottom:.3rem}
-[data-family-credit="off"] .family-credit{display:none}
-@media print{.family-credit{display:none}}
-.top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.5rem;max-width:44rem;margin:0 auto;padding:2.2rem 1rem 0}
-.top .name{font-weight:600;color:var(--fg);text-decoration:none}
-.own{display:flex;gap:1rem;margin-left:auto;font-size:.95rem}
-.own a,.site-links a{color:var(--accent);font-weight:600}
-.site-links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin-bottom:.8rem;font-size:.95rem}
-@media (max-width:40rem){.own{margin:0;width:100%}}
-h2{font-size:1.25rem;margin:2rem 0 .5rem}ol,ul.plain{color:var(--muted);padding-left:1.2rem}li{margin:.35rem 0}
-pre{background:rgba(127,127,127,.1);padding:.8rem 1rem;border-radius:6px;white-space:pre-wrap;font-size:.9rem;color:var(--fg)}
-code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
-@media (max-width:599px){footer,.family-credit,.family,.site-links{font-size:15px}}
-</style>
+<link rel="stylesheet" href="/assets/family-credit.css">
+<link rel="stylesheet" href="/assets/van.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<aside class="demo-band" aria-label="Demo notice">Demo site: made-up business, placeholder details</aside>
 <details class="family-credit">
   <summary>Sovereign Website</summary>
   <ul>
@@ -83,25 +45,70 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
   </ul>
 </details>
 <header class="top">
-  <a class="name" href="/">Man and van moving (demo)</a>
+  <a class="name" href="/"><span class="ph">[Firm name]</span></a>
   <nav class="own" aria-label="This site">
-    <a href="/start/">Start here</a>
-    <a href="/agents/">Use with your AI</a>
+    <a href="#services">What we move</a>
+    <a href="#how">How it works</a>
+    <a class="btn small" href="#quote">Get a quote</a>
   </nav>
 </header>
 <main id="main">
-<div class="mark">moving-van.business.sovereignweb.site</div>
-<h1>Man and van moving (demo)</h1>
-<p>A demo site for a small family moving service: placeholder content until the owner supplies the details.</p>
-<p>This site was made by one request to the Sovereign Website pipeline. Its files, its history and its address are in a repository its owner controls, and can move anywhere.</p>
-<footer>
+<section class="hero" aria-labelledby="hero-h">
+  <p class="kicker">Man and van, <span class="ph">[Area you cover]</span></p>
+  <h1 id="hero-h">Moving a few things, a flat or a whole house?</h1>
+  <p class="lead">A small family firm with a van and a pair of careful hands. See what fits in the van, then ask for a quote.</p>
+  <figure class="van-fig">
+    <svg class="van" viewBox="0 0 800 318" role="img" aria-labelledby="van-t van-d">
+<title id="van-t">The side of the van</title>
+<desc id="van-d">A drawing of a removal van. The firm&#x27;s name is on the panel, and the load space is split to show roughly what each kind of move takes up.</desc>
+<rect class="body" x="30" y="30" width="530" height="225" rx="14"/>
+<rect class="ph-box" x="135" y="50" width="320" height="82" rx="8"/>
+<text class="panel-name" x="295" y="86" text-anchor="middle">[Firm name]</text>
+<text class="panel-line" x="295" y="118" text-anchor="middle">[Phone number]</text>
+<rect class="load load-house" x="60" y="140" width="470" height="30" rx="4"/><text class="load-label" x="70" y="162">A house</text><rect class="load load-flat" x="60" y="176" width="235" height="30" rx="4"/><text class="load-label" x="70" y="198">A flat</text><rect class="load load-small" x="60" y="212" width="118" height="30" rx="4"/><text class="load-label beside" x="188" y="234">A small load</text>
+<path class="cab" d="M560 255 V95 h110 q22 0 36 22 l44 70 q8 13 8 28 V255 Z"/>
+<path class="window" d="M585 115 h78 q12 0 19 11 l36 58 h-133 Z"/>
+<rect class="bumper" x="560" y="240" width="210" height="15" rx="6"/>
+<circle class="wheel" cx="160" cy="278" r="30"/><circle class="hub" cx="160" cy="278" r="12"/>
+<circle class="wheel" cx="660" cy="278" r="30"/><circle class="hub" cx="660" cy="278" r="12"/>
+<line class="road" x1="0" y1="312" x2="800" y2="312"/>
+</svg>
+    <figcaption>
+      <ul class="loads"><li><span class="swatch load-small" aria-hidden="true"></span><strong>A small load</strong>: a few items</li><li><span class="swatch load-flat" aria-hidden="true"></span><strong>A flat</strong>: about half the van</li><li><span class="swatch load-house" aria-hidden="true"></span><strong>A house</strong>: the whole van, or <span class="ph">[more trips]</span></li></ul>
+      <p class="small-print">A rough guide to what fits, not a measurement. The owner sets the van&#x27;s real size.</p>
+    </figcaption>
+  </figure>
+  <p><a class="btn" href="#quote">Get a quote</a></p>
+</section>
+<section id="services" aria-labelledby="services-h">
+  <h2 id="services-h">What we move</h2>
+  <ul class="cards"><li><h3>Single items</h3><p>A sofa, a fridge, a wardrobe or a bike: one thing from one place to another.</p></li><li><h3>Flat moves</h3><p>Boxes, furniture and the odd awkward lamp, up and down the stairs.</p></li><li><h3>House moves</h3><p>A whole home, in one trip or several, on a day that suits you.</p></li><li><h3>Packing</h3><p>Boxes and packing on the day, if you want a hand with it.</p></li><li><h3>Clearances</h3><p>Clearing out a loft, a garage or a room you are not keeping.</p></li></ul>
+  <p>Prices from <span class="ph">[£ from]</span>. The owner sets the real prices.</p>
+  <p>Insurance and licences: <span class="ph">[details to be supplied by the owner]</span>.</p>
+</section>
+<section id="how" aria-labelledby="how-h">
+  <h2 id="how-h">How it works</h2>
+  <ol class="steps"><li>Tell us what you are moving and where, with the quote form.</li><li>We reply with a price and a day that suits you.</li><li>On the day we load, drive and unload.</li></ol>
+</section>
+<section id="quote" aria-labelledby="quote-h">
+  <h2 id="quote-h">Get a quote</h2>
+  <p class="demo-note" role="note">Demo: this form does not send yet.</p>
+  <form class="quote">
+    <div class="field"><label for="q-what">What are you moving?</label><select id="q-what" name="q-what"><option>A small load</option><option>A flat</option><option>A house</option><option>Something else</option></select></div><div class="field"><label for="q-from">Moving from (town or postcode)</label><input id="q-from" name="q-from" type="text"></div><div class="field"><label for="q-to">Moving to (town or postcode)</label><input id="q-to" name="q-to" type="text"></div><div class="field"><label for="q-when">When?</label><input id="q-when" name="q-when" type="date"></div><div class="field"><label for="q-name">Your name</label><input id="q-name" name="q-name" type="text"></div><div class="field"><label for="q-contact">Phone or email</label><input id="q-contact" name="q-contact" type="text"></div><div class="field"><label for="q-more">Anything else we should know?</label><textarea id="q-more" name="q-more" rows="3"></textarea></div>
+    <button type="button" disabled>Send (demo, sends nothing)</button>
+  </form>
+  <h3>Or get in touch</h3>
+  <ul class="contact"><li><span class="ph">[Phone number]</span></li><li><span class="ph">[Email address]</span></li><li><span class="ph">[Area you cover]</span></li></ul>
+</section>
+</main>
+<footer class="foot">
 <nav class="site-links" aria-label="About this site">
   <a href="/start/">Start here</a>
   <a href="/agents/">Use with your AI</a>
   <a href="/admin/">How this site was made</a>
   <a href="/policy/">How this site is governed</a>
 </nav>
-A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Business__Moving-Van">github.com/SovereignWebsite/Site__Business__Moving-Van</a>.</footer>
-</main>
+<p>A template from the Sovereign Website pipeline. A real firm&#x27;s site is made from a copy once the owner agrees and supplies the details. Source: <a href="https://github.com/SovereignWebsite/Site__Template__Business__Moving-Van">github.com/SovereignWebsite/Site__Template__Business__Moving-Van</a>.</p>
+</footer>
 </body>
 </html>
