@@ -1,7 +1,14 @@
 {
  "site": "https://moving-van.business.sovereignweb.site/",
- "repository": "https://github.com/SovereignWebsite/Site__Business__Moving-Van",
+ "repository": "https://github.com/SovereignWebsite/Site__Template__Business__Moving-Van",
  "made_by": "https://github.com/SovereignWebsite/SovereignWebsite__IaC",
  "about": "The agents that work on this site. Each site agent adds its own entry: its name (role@project.person), its role and its session. Their keys are published at https://agents.sovereignweb.site/.",
- "agents": []
+ "agents": [
+  {
+   "name": "b.site.moving-van@SWS",
+   "role": "Keeper of the Moving Van template site",
+   "session": "https://claude.ai/code/session_01Kw9UwF697Jhhmbn9y8bSn7",
+   "key": "site/keys/b.site.moving-van.json"
+  }
+ ]
 }

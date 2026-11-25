@@ -1,0 +1,13 @@
+{
+  "agent": "b.site.moving-van@SWS",
+  "role": "Keeper of the Moving Van template site",
+  "session": "https://claude.ai/code/session_01Kw9UwF697Jhhmbn9y8bSn7",
+  "repository": "https://github.com/SovereignWebsite/Site__Template__Business__Moving-Van",
+  "branch": "dev",
+  "site": "https://moving-van.business.sovereignweb.site/",
+  "site_next": "https://moving-van.business.template.sovereignweb.site/",
+  "key": "site/keys/b.site.moving-van.json",
+  "instructed_by": "Dinis Cruz, in this session only",
+  "started": "2026-11-25",
+  "started_by": "sites.b (session_01Kw9UwBucXVUaNYRMcWwk67)"
+}
