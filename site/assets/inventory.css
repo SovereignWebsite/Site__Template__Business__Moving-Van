@@ -1,0 +1,16 @@
+/* Design 4: The inventory. A room-by-room checklist on a clipboard; ticking rooms shapes the quote request.
+   The tally is CSS counters only: no script. */
+:root{--bg:#eef2f0;--accent:#22684a;--accent-fg:#fff;--paper:#fffef8;--rule:#d6e3ea;--clip:#6b6f74}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--accent:#7fd3a8;--accent-fg:#06200f;--paper:#1c201d;--rule:#2b3a36;--clip:#9aa0a6}}
+.d-inventory .quote{background:var(--paper);border-top:14px solid var(--clip);border-radius:6px 6px 10px 10px;counter-reset:rooms;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.d-inventory fieldset{grid-column:1/-1;border:0;margin:0;padding:0}
+.d-inventory legend{font-weight:800;font-size:1.3rem;margin-bottom:.4rem}
+.d-inventory fieldset ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));column-gap:1.5rem}
+.d-inventory fieldset li{display:flex;align-items:center;gap:.7rem;border-bottom:1px solid var(--rule);padding:.35rem 0}
+.d-inventory input[type=checkbox]{width:1.6rem;height:1.6rem;min-height:0;margin:0;accent-color:var(--accent)}
+.d-inventory fieldset label{font-weight:500;font-size:1.05rem;flex:1;padding:.3rem 0}
+.room:checked{counter-increment:rooms}
+.room:checked + label{font-weight:700}
+.tally{grid-column:1/-1;font-weight:800;font-size:1.2rem;margin:0}
+.count::after{content:counter(rooms);display:inline-block;min-width:2.2rem;text-align:center;background:var(--accent);color:var(--accent-fg);border-radius:999px;padding:0 .5rem}
+.no-price{grid-column:1/-1;color:var(--muted);margin:0}

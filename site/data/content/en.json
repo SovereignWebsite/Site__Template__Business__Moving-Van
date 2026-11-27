@@ -7,7 +7,11 @@
     "description": "A template site for a small man-and-van moving firm. Every name, place, price and contact is a placeholder until the owner supplies the real details."
   },
   "demo_band": "Demo site: made-up business, placeholder details",
-  "nav": {"services": "What we move", "how": "How it works", "quote": "Get a quote"},
+  "nav": {
+    "services": "What we move",
+    "how": "How it works",
+    "quote": "Get a quote"
+  },
   "hero": {
     "kicker": "Man and van, [Area you cover]",
     "heading": "Moving a few things, a flat or a whole house?",
@@ -20,20 +24,50 @@
     "panel_name": "[Firm name]",
     "panel_line": "[Phone number]",
     "loads": [
-      {"id": "small", "label": "A small load", "note": "a few items", "share": 0.25},
-      {"id": "flat", "label": "A flat", "note": "about half the van", "share": 0.5},
-      {"id": "house", "label": "A house", "note": "the whole van, or [more trips]", "share": 1.0}
+      {
+        "id": "small",
+        "label": "A small load",
+        "note": "a few items",
+        "share": 0.25
+      },
+      {
+        "id": "flat",
+        "label": "A flat",
+        "note": "about half the van",
+        "share": 0.5
+      },
+      {
+        "id": "house",
+        "label": "A house",
+        "note": "the whole van, or [more trips]",
+        "share": 1.0
+      }
     ],
     "caption": "A rough guide to what fits, not a measurement. The owner sets the van's real size."
   },
   "services": {
     "heading": "What we move",
     "items": [
-      {"title": "Single items", "text": "A sofa, a fridge, a wardrobe or a bike: one thing from one place to another."},
-      {"title": "Flat moves", "text": "Boxes, furniture and the odd awkward lamp, up and down the stairs."},
-      {"title": "House moves", "text": "A whole home, in one trip or several, on a day that suits you."},
-      {"title": "Packing", "text": "Boxes and packing on the day, if you want a hand with it."},
-      {"title": "Clearances", "text": "Clearing out a loft, a garage or a room you are not keeping."}
+      {
+        "title": "Single items",
+        "text": "A sofa, a fridge, a wardrobe or a bike: one thing from one place to another."
+      },
+      {
+        "title": "Flat moves",
+        "text": "Boxes, furniture and the odd awkward lamp, up and down the stairs."
+      },
+      {
+        "title": "House moves",
+        "text": "A whole home, in one trip or several, on a day that suits you."
+      },
+      {
+        "title": "Packing",
+        "text": "Boxes and packing on the day, if you want a hand with it."
+      },
+      {
+        "title": "Clearances",
+        "text": "Clearing out a loft, a garage or a room you are not keeping."
+      }
     ],
     "price_line": "Prices from [£ from]. The owner sets the real prices.",
     "cover_note": "Insurance and licences: [details to be supplied by the owner]."
@@ -50,19 +84,220 @@
     "heading": "Get a quote",
     "demo_note": "Demo: this form does not send yet.",
     "fields": [
-      {"id": "q-what", "label": "What are you moving?", "type": "select", "options": ["A small load", "A flat", "A house", "Something else"]},
-      {"id": "q-from", "label": "Moving from (town or postcode)", "type": "text"},
-      {"id": "q-to", "label": "Moving to (town or postcode)", "type": "text"},
-      {"id": "q-when", "label": "When?", "type": "date"},
-      {"id": "q-name", "label": "Your name", "type": "text"},
-      {"id": "q-contact", "label": "Phone or email", "type": "text"},
-      {"id": "q-more", "label": "Anything else we should know?", "type": "textarea"}
+      {
+        "id": "q-what",
+        "label": "What are you moving?",
+        "type": "select",
+        "options": [
+          "A small load",
+          "A flat",
+          "A house",
+          "Something else"
+        ]
+      },
+      {
+        "id": "q-from",
+        "label": "Moving from (town or postcode)",
+        "type": "text"
+      },
+      {
+        "id": "q-to",
+        "label": "Moving to (town or postcode)",
+        "type": "text"
+      },
+      {
+        "id": "q-when",
+        "label": "When?",
+        "type": "date"
+      },
+      {
+        "id": "q-name",
+        "label": "Your name",
+        "type": "text"
+      },
+      {
+        "id": "q-contact",
+        "label": "Phone or email",
+        "type": "text"
+      },
+      {
+        "id": "q-more",
+        "label": "Anything else we should know?",
+        "type": "textarea"
+      }
     ],
     "button": "Send (demo, sends nothing)",
     "contact_heading": "Or get in touch",
-    "contact": ["[Phone number]", "[Email address]", "[Area you cover]"]
+    "contact": [
+      "[Phone number]",
+      "[Email address]",
+      "[Area you cover]"
+    ]
   },
   "footer": {
     "about": "A template from the Sovereign Website pipeline. A real firm's site is made from a copy once the owner agrees and supplies the details."
+  },
+  "designs": [
+    {
+      "slug": "van",
+      "path": "/",
+      "number": 1,
+      "name": "The van",
+      "line": "The page as the side of the van: see what fits."
+    },
+    {
+      "slug": "moving-day",
+      "path": "/moving-day/",
+      "number": 2,
+      "name": "Moving day",
+      "line": "The page as the day itself, step by step."
+    },
+    {
+      "slug": "boxes",
+      "path": "/boxes/",
+      "number": 3,
+      "name": "The boxes",
+      "line": "Every service a labelled box that opens."
+    },
+    {
+      "slug": "inventory",
+      "path": "/inventory/",
+      "number": 4,
+      "name": "The inventory",
+      "line": "Tick the rooms you are moving to shape your quote."
+    },
+    {
+      "slug": "card",
+      "path": "/card/",
+      "number": 5,
+      "name": "The card",
+      "line": "The plain, printable page, like a flyer through the door."
+    }
+  ],
+  "chooser": {
+    "button": "Choose a design",
+    "heading": "Five designs for this template",
+    "current": "You are here",
+    "all": "All five, side by side",
+    "all_heading": "All five designs, side by side",
+    "all_lead": "The same placeholder content, laid out around five different ideas from the world of moving. Pick one to open it.",
+    "shot_alt": "Screenshot of design {n}, {name}"
+  },
+  "moving_day": {
+    "kicker": "Man and van, [Area you cover]",
+    "heading": "Your moving day, step by step",
+    "lead": "From booking to the last box. Here is what we do, and what you do, at each step.",
+    "we": "We",
+    "you": "You",
+    "steps": [
+      {
+        "name": "Book",
+        "we": "Reply to your quote request with a price and a day.",
+        "you": "Tell us what you are moving and where.",
+        "cta": true
+      },
+      {
+        "name": "Pack",
+        "we": "Bring boxes and packing on the day, if you ask for them.",
+        "you": "Pack what you can, and label the boxes by room."
+      },
+      {
+        "name": "Load",
+        "we": "Carry everything out and load the van with care.",
+        "you": "Show us what goes and what stays."
+      },
+      {
+        "name": "Drive",
+        "we": "Drive your things to the new place.",
+        "you": "Meet us there, or leave us the keys."
+      },
+      {
+        "name": "Unload",
+        "we": "Carry each box to the room on its label.",
+        "you": "Tell us where the big things go."
+      },
+      {
+        "name": "Done",
+        "we": "Take away the packing, if you want us to.",
+        "you": "Put the kettle on."
+      }
+    ]
+  },
+  "boxes": {
+    "kicker": "Man and van, [Area you cover]",
+    "heading": "What we move, box by box",
+    "lead": "Open a box to see what is inside.",
+    "items": [
+      {
+        "label": "THIS WAY UP",
+        "title": "Single items",
+        "text": "A sofa, a fridge, a wardrobe or a bike: one thing from one place to another."
+      },
+      {
+        "label": "FLAT",
+        "title": "Flat moves",
+        "text": "Boxes, furniture and the odd awkward lamp, up and down the stairs."
+      },
+      {
+        "label": "WHOLE HOUSE",
+        "title": "House moves",
+        "text": "A whole home, in one trip or several, on a day that suits you."
+      },
+      {
+        "label": "FRAGILE",
+        "title": "Packing",
+        "text": "Boxes and packing on the day, if you want a hand with it."
+      },
+      {
+        "label": "CLEAR OUT",
+        "title": "Clearances",
+        "text": "Clearing out a loft, a garage or a room you are not keeping."
+      },
+      {
+        "label": "PRICES",
+        "title": "What it costs",
+        "text": "Prices from [£ from]. The owner sets the real prices."
+      }
+    ]
+  },
+  "inventory": {
+    "kicker": "Man and van, [Area you cover]",
+    "heading": "What are you moving?",
+    "lead": "Tick the rooms you are moving. Your list goes with your quote request, so we can give you a price.",
+    "rooms_legend": "Rooms",
+    "rooms": [
+      "Kitchen",
+      "Living room",
+      "Dining room",
+      "Bedroom 1",
+      "Bedroom 2",
+      "Bedroom 3",
+      "Bathroom",
+      "Home office",
+      "Loft",
+      "Garage or shed",
+      "Garden"
+    ],
+    "extras_legend": "Anything special?",
+    "extras": [
+      "A piano or a very heavy item",
+      "Stairs and no lift",
+      "Help with packing",
+      "Things to clear and take away"
+    ],
+    "summary": "Rooms ticked:",
+    "no_price": "No price yet: the owner sets the prices. We reply with a price for your list."
+  },
+  "card": {
+    "heading": "[Firm name]",
+    "sub": "Man and van, [Area you cover]",
+    "facts": [
+      "Single items, flat moves and house moves",
+      "Packing and clearances",
+      "Prices from [£ from]",
+      "Insurance and licences: [details to be supplied by the owner]"
+    ],
+    "call": "For a quote, call or email:",
+    "print": "This page is made to print: one page, like a flyer through the door."
   }
 }

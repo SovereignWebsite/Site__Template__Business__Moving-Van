@@ -1,0 +1,16 @@
+/* Design 2: Moving day. The page as the day itself: a timeline from booking to done. */
+:root{--bg:#fff8ef;--accent:#a3420f;--accent-fg:#fff;--line:#f0d9c2;--card:#fff;--dot:#a3420f}
+@media (prefers-color-scheme:dark){:root{--bg:#1a1410;--accent:#ffa36b;--accent-fg:#2a1206;--line:#3d2c20;--card:#241b15;--dot:#ffa36b}}
+.d-moving-day .hero{padding:1rem 0 .5rem}
+.day{list-style:none;margin:1.5rem 0 2rem;padding:0;position:relative}
+.day::before{content:"";position:absolute;left:1.45rem;top:1rem;bottom:1rem;width:4px;background:repeating-linear-gradient(var(--dot) 0 12px,transparent 12px 22px)}
+.day-step{position:relative;padding:0 0 1.6rem 4.2rem}
+.day-step h2{margin:0 0 .6rem;font-size:1.5rem;display:flex;align-items:center;gap:.8rem}
+.day-n{position:absolute;left:0;top:-.2rem;width:3rem;height:3rem;border-radius:50%;background:var(--dot);color:var(--accent-fg);display:grid;place-items:center;font-size:1.3rem;font-weight:800;box-shadow:0 0 0 6px var(--bg)}
+.day-step dl{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:0 0 .6rem}
+.day-step dl div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.7rem .9rem}
+.day-step dt{font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:var(--accent)}
+.day-step dd{margin:0}
+.day-step:first-child dl div{border-color:var(--accent)}
+.day-small{color:var(--muted)}
+@media (max-width:599px){.day-step{padding-left:3.6rem}.day-step dl{grid-template-columns:1fr}.day-n{width:2.6rem;height:2.6rem;font-size:1.1rem}.day::before{left:1.25rem}}

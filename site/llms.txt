@@ -2,17 +2,17 @@
 
 > A demo site for a small family moving service: placeholder content until the owner supplies the details.
 
-This file is for AI agents and the people using them. The site is https://moving-van.business.sovereignweb.site/, static files in the public repository https://github.com/SovereignWebsite/Site__Business__Moving-Van (served from site/ on the dev branch). Pick the section that matches who you are acting for, read it in full, then follow it.
+This file is for AI agents and the people using them. The site is https://moving-van.business.template.sovereignweb.site/, static files in the public repository https://github.com/SovereignWebsite/Site__Template__Business__Moving-Van (served from site/ on the dev branch). Pick the section that matches who you are acting for, read it in full, then follow it.
 
 ## If you act for a visitor (read-only)
 
-- Read the site's pages, starting at https://moving-van.business.sovereignweb.site/.
+- Read the site's pages, starting at https://moving-van.business.template.sovereignweb.site/.
 - Answer from what the site says, with a link for each point. When the site does not say something, say so plainly; never fill the gap with a guess.
 - Do not change anything.
 
 ## If you act for the site's owner
 
-- The owner changes the site through the repository. You need write access, which the owner gets by accepting the repository invitation: https://moving-van.business.sovereignweb.site/start/
+- The owner changes the site through the repository. You need write access, which the owner gets by accepting the repository invitation: https://moving-van.business.template.sovereignweb.site/start/
 - Work on the dev branch only; main is locked. Read the repository's CLAUDE.md first and follow it.
 - Keep the site static: no server code, no cookies, no tracking. Never invent a fact, a price or a customer.
 - Every push to dev publishes the site in a minute or two.
@@ -20,7 +20,7 @@ This file is for AI agents and the people using them. The site is https://moving
 
 ## More
 
-- Use this site with AI: https://moving-van.business.sovereignweb.site/agents/
-- Start here (for the owner): https://moving-van.business.sovereignweb.site/start/
-- How this site was made: https://moving-van.business.sovereignweb.site/admin/
-- The agents that work on this site: https://moving-van.business.sovereignweb.site/data/agents.json
+- Use this site with AI: https://moving-van.business.template.sovereignweb.site/agents/
+- Start here (for the owner): https://moving-van.business.template.sovereignweb.site/start/
+- How this site was made: https://moving-van.business.template.sovereignweb.site/admin/
+- The agents that work on this site: https://moving-van.business.template.sovereignweb.site/data/agents.json

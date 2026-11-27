@@ -1,8 +1,8 @@
 {
-  "about": "Agent Behaviour Policy (ABP) for Man and van moving (demo) (moving-van.business.sovereignweb.site). It says which agents may work on this site, what they may change, which branches they may push to, what needs the owner's yes, and what the pipeline checks before anything is published. Anything not listed here is not allowed. The plain-English explanation is at /policy/.",
+  "about": "Agent Behaviour Policy (ABP) for Man and van moving (demo) (moving-van.business.template.sovereignweb.site). It says which agents may work on this site, what they may change, which branches they may push to, what needs the owner's yes, and what the pipeline checks before anything is published. Anything not listed here is not allowed. The plain-English explanation is at /policy/.",
   "version": 1,
-  "site": "moving-van.business.sovereignweb.site",
-  "repository": "SovereignWebsite/Site__Business__Moving-Van",
+  "site": "moving-van.business.template.sovereignweb.site",
+  "repository": "SovereignWebsite/Site__Template__Business__Moving-Van",
   "owner": "The site's owner. Until ownership is handed over, Dinis Cruz.",
   "source": "Dinis Cruz, 21 November 2026, 16:45 UTC, in conductor.b@SovereignWebsite.dinis's session: \"make sure that every site has an ABP policy and explanation of how it works and what it does\".",
   "roles": {

@@ -1,0 +1,5 @@
+/* All five designs, side by side. */
+.all-five{list-style:none;padding:0;margin:2rem 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(18rem,1fr));gap:1.4rem}
+.all-five a{display:block;color:var(--fg);text-decoration:none;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.6rem .7rem .8rem;line-height:1.4}
+.all-five a:hover,.all-five a:focus-visible{border-color:var(--accent)}
+.all-five strong{font-size:1.15rem}

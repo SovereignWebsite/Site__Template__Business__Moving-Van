@@ -1,0 +1,14 @@
+/* Design 5: The card. One plain column, the facts and the contact, like a flyer through the door. Made to print. */
+:root{--bg:#e9e7e1;--accent:#1d1d1b;--accent-fg:#fff;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f0e;--accent:#ecebe6;--accent-fg:#141513;--card:#1d1e1b}}
+.d-card main{max-width:34rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:2.2rem 2rem;margin:1.5rem 0 1rem;box-shadow:0 2px 0 var(--line),0 14px 30px rgba(0,0,0,.12);text-align:center}
+.card h1{font-size:clamp(2rem,8vw,2.8rem);margin:0 0 .3rem}
+.card-sub{font-size:1.15rem;color:var(--muted);border-bottom:3px double var(--line);padding-bottom:1rem}
+.facts{list-style:none;padding:0;margin:1rem 0 1.4rem;font-size:1.1rem}
+.facts li{padding:.35rem 0;border-bottom:1px dotted var(--line)}
+.call{font-weight:800;margin-bottom:.4rem}
+.card-contact{list-style:none;padding:0;margin:0 0 1.4rem;font-size:1.25rem;font-weight:700}
+.card-contact li{margin:.3rem 0}
+.print-note{text-align:center;color:var(--muted);font-size:.9rem}
+@media print{body{background:#fff;color:#000}.top,.foot,.print-note{display:none}.card{box-shadow:none;border:2px solid #000}.d-card main{max-width:none}}

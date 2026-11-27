@@ -1,5 +1,5 @@
 {
- "site": "https://moving-van.business.sovereignweb.site/",
+ "site": "https://moving-van.business.template.sovereignweb.site/",
  "repository": "https://github.com/SovereignWebsite/Site__Template__Business__Moving-Van",
  "made_by": "https://github.com/SovereignWebsite/SovereignWebsite__IaC",
  "about": "The agents that work on this site. Each site agent adds its own entry: its name (role@project.person), its role and its session. Their keys are published at https://agents.sovereignweb.site/.",

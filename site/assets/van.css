@@ -1,29 +1,6 @@
-/* Design 1: The van. System fonts only, light and dark. */
-:root{--bg:#f7f5ef;--fg:#1d1d1b;--muted:#55534d;--accent:#1f5f8b;--accent-fg:#fff;--line:#ddd8cc;--card:#fff;
-  --van:#ffffff;--van-line:#1d1d1b;--cab:#1f5f8b;--glass:#cfe3f0;--wheel:#2a2a28;--hub:#c9c6bd;
-  --small:#f2c14e;--flat:#e58a3a;--house:#9fc5a8;--ph-bg:#fff3c4;--ph-fg:#5c4400;--band-bg:#1d1d1b;--band-fg:#fff3c4}
-@media (prefers-color-scheme:dark){:root{--bg:#141513;--fg:#ecebe6;--muted:#b4b2aa;--accent:#8cc4ec;--accent-fg:#0c1a24;--line:#33342f;--card:#1d1e1b;
-  --van:#24251f;--van-line:#ecebe6;--cab:#3d7eab;--glass:#9fc3db;--wheel:#0b0b0a;--hub:#77756e;
-  --small:#c99a2a;--flat:#b8652a;--house:#4f7d5b;--ph-bg:#4a3b06;--ph-fg:#ffe9a6;--band-bg:#ffe9a6;--band-fg:#1d1d1b}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:3rem;z-index:99;background:var(--card);padding:.4rem .6rem}
-.demo-band{position:sticky;top:0;z-index:40;background:var(--band-bg);color:var(--band-fg);text-align:center;font-weight:600;font-size:.9rem;padding:.4rem 1rem}
-.family-credit{top:2.6rem}
-.ph{background:var(--ph-bg);color:var(--ph-fg);border:1px dashed currentColor;border-radius:4px;padding:0 .2em;font-style:normal;white-space:nowrap}
-.top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.25rem;max-width:62rem;margin:0 auto;padding:2.6rem 1rem .5rem}
-.top .name{font-weight:700;font-size:1.15rem;color:var(--fg);text-decoration:none}
-.own{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin-left:auto;font-size:.95rem}
-.own a{color:var(--accent);font-weight:600}
-main{max-width:62rem;margin:0 auto;padding:0 1rem 3rem}
-.kicker{color:var(--muted);font-weight:600;margin:1.5rem 0 .3rem}
-h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.1;margin:0 0 .8rem}
-.lead{font-size:1.15rem;color:var(--muted);max-width:40rem}
-h2{font-size:1.6rem;margin:3rem 0 1rem}h3{font-size:1.1rem;margin:0 0 .3rem}
-p{margin:0 0 1rem}a{color:var(--accent)}
-.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);font-weight:700;text-decoration:none;padding:.75rem 1.4rem;border-radius:999px;min-height:44px}
-.btn.small{padding:.35rem .9rem;min-height:0;color:var(--accent-fg)}
-.btn:hover,.btn:focus-visible{filter:brightness(1.1)}
+/* Design 1: The van. The page as the side of the van. */
+:root{--van:#ffffff;--van-line:#1d1d1b;--cab:#1f5f8b;--glass:#cfe3f0;--wheel:#2a2a28;--hub:#c9c6bd;--small:#f2c14e;--flat:#e58a3a;--house:#9fc5a8}
+@media (prefers-color-scheme:dark){:root{--van:#24251f;--van-line:#ecebe6;--cab:#3d7eab;--glass:#9fc3db;--wheel:#0b0b0a;--hub:#77756e;--small:#c99a2a;--flat:#b8652a;--house:#4f7d5b}}
 .van-fig{margin:1.5rem 0}
 .van{width:100%;height:auto;display:block}
 .van .body{fill:var(--van);stroke:var(--van-line);stroke-width:4}
@@ -36,25 +13,9 @@ p{margin:0 0 1rem}a{color:var(--accent)}
 .van .panel-name{font:700 38px system-ui,sans-serif;fill:var(--ph-fg)}
 .van .panel-line{font:600 24px system-ui,sans-serif;fill:var(--ph-fg)}
 .van .load-label{font:600 20px system-ui,sans-serif;fill:#1d1d1b}
-.load-small{fill:var(--small);background:var(--small)}.load-flat{fill:var(--flat);background:var(--flat)}.load-house{fill:var(--house);background:var(--house)}
 .van .load-label.beside{fill:var(--fg)}
+.load-small{fill:var(--small);background:var(--small)}.load-flat{fill:var(--flat);background:var(--flat)}.load-house{fill:var(--house);background:var(--house)}
 @media (prefers-color-scheme:dark){.van .load-label{fill:#fff}.van .load-label.beside{fill:var(--fg)}}
 .loads{list-style:none;padding:0;margin:.8rem 0 .3rem;display:flex;flex-wrap:wrap;gap:.4rem 1.5rem}
 .swatch{display:inline-block;width:1rem;height:1rem;border-radius:3px;margin-right:.4rem;vertical-align:-.15rem}
-.small-print{font-size:.9rem;color:var(--muted)}
-.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem}
-.cards li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem}
-.cards p{color:var(--muted);margin:0}
-.steps{padding-left:1.3rem}.steps li{margin:.4rem 0}
-.demo-note{display:inline-block;background:var(--ph-bg);color:var(--ph-fg);font-weight:700;padding:.3rem .7rem;border-radius:6px}
-.quote{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.9rem 1.2rem;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.2rem;margin-bottom:1.5rem}
-.field{display:flex;flex-direction:column;gap:.25rem}
-.field:last-of-type{grid-column:1/-1}
-label{font-weight:600;font-size:.95rem}
-input,select,textarea{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--muted);border-radius:6px;padding:.5rem .6rem;min-height:44px}
-.quote button{grid-column:1/-1;justify-self:start;font:inherit;font-weight:700;padding:.7rem 1.3rem;border-radius:999px;border:2px dashed var(--muted);background:transparent;color:var(--muted);cursor:not-allowed}
-.contact{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
-.foot{max-width:62rem;margin:0 auto;padding:1.5rem 1rem 1rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
-.site-links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin-bottom:.8rem}.site-links a{font-weight:600}
-@media (max-width:599px){body{font-size:17px}.own{margin-left:0;width:100%}.foot,.family-credit,.site-links,.small-print{font-size:15px}.van .load-label{font-size:24px}}
-@media print{.demo-band{position:static}.quote button{display:none}}
+@media (max-width:599px){.van .load-label{font-size:24px}}
