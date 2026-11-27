@@ -135,9 +135,11 @@ def title_for(c, d):
     return f'{c["site"]["name"]}: {d["name"]} (design {d["number"]}, template)'
 
 
-def quote_fields(c):
+def quote_fields(c, skip=()):
     out = []
     for f in c["quote"]["fields"]:
+        if f["id"] in skip:
+            continue
         lab = f'<label for="{esc(f["id"])}">{esc(f["label"])}</label>'
         if f["type"] == "select":
             opts = "".join(f"<option>{esc(o)}</option>" for o in f["options"])
@@ -150,7 +152,7 @@ def quote_fields(c):
     return "".join(out)
 
 
-def quote_section(c, before_fields=""):
+def quote_section(c, before_fields="", skip=()):
     """The one action. In the demo the form sends nothing: no action, and its button is disabled."""
     q = c["quote"]
     contact = "".join(f"<li>{ph(x)}</li>" for x in q["contact"])
@@ -158,7 +160,7 @@ def quote_section(c, before_fields=""):
   <h2 id="quote-h">{esc(q['heading'])}</h2>
   <p class="demo-note" role="note">{esc(q['demo_note'])}</p>
   <form class="quote">
-    {before_fields}{quote_fields(c)}
+    {before_fields}{quote_fields(c, skip)}
     <button type="button" disabled>{esc(q['button'])}</button>
   </form>
   <h3>{esc(q['contact_heading'])}</h3>
@@ -310,7 +312,7 @@ def design_inventory(c):
   <p class="hero-price">{ph(c['services']['price_line'])}</p>
   <p>{ph(c['services']['cover_note'])}</p>
 </section>
-{quote_section(c, checklist)}"""
+{quote_section(c, checklist, skip=("q-what",))}"""
 
 
 # Design 5: The card --------------------------------------------------------------------------------------------

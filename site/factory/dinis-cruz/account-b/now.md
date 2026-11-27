@@ -15,7 +15,9 @@
 
 - Round 2 (rated 4, M4; https://design.agents.sovereignweb.site/reviews-moving-van-2026-11-27-round-2.html), all five asks done: the phone number in The boxes' first screen; price and insurance lines on the inventory; the firm's one-line description is now a placeholder in the owner's words, not a claim; prices per service ([£ price] for single items, flats and houses); the van's painted labels larger on a phone.
 
+- design.b.rounds checked d83708b: holds at 4, M4; no round 3 needed unless the designs change. The inventory no longer asks "What are you moving?" twice (its checklist replaces the drop-down).
+
 ## Next
-1. Round 3 with design.b.rounds.
+1. For later (design.b.rounds): The boxes' tilt and stamp size.
 2. Admin area like Kate's, and a guided tour with a PDF (learnings-from-lee-elle.md, items 8 to 11).
 3. Register with hub.b; an own share card in place of the seed's.
