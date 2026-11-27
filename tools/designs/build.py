@@ -226,6 +226,7 @@ def design_van(c):
   <p class="kicker">{ph(c['hero']['kicker'])}</p>
   <h1 id="hero-h">{esc(c['hero']['heading'])}</h1>
   <p class="lead">{ph(c['hero']['lead'])}</p>
+  <p class="hero-call">{ph(c["hero"]["call"])}</p>
   <figure class="van-fig">
     {van_svg(v)}
     <figcaption>
@@ -256,10 +257,12 @@ def design_day(c):
   <p class="kicker">{ph(m['kicker'])}</p>
   <h1 id="hero-h">{esc(m['heading'])}</h1>
   <p class="lead">{ph(m['lead'])}</p>
+  <p class="hero-price">{ph(c['services']['price_line'])}</p>
+  <p class="hero-call">{ph(c["hero"]["call"])}</p>
 </section>
 <ol class="day">{''.join(steps)}</ol>
 <section class="day-small" aria-label="{esc(c['services']['heading'])}">
-  <p>{ph(c['services']['price_line'])} {ph(c['services']['cover_note'])}</p>
+  <p>{ph(c['services']['cover_note'])}</p>
 </section>
 {quote_section(c)}"""
 
@@ -268,10 +271,11 @@ def design_day(c):
 
 def design_boxes(c):
     b = c["boxes"]
-    boxes = "".join(f"""<li><details class="box">
-  <summary><span class="stamp">{esc(i['label'])}</span><span class="box-title">{esc(i['title'])}</span></summary>
-  <p>{ph(i['text'])}</p>
-</details></li>""" for i in b["items"])
+    boxes = "".join(f"""<li class="box">
+  <p class="stamp">{esc(i['label'])}</p>
+  <h2 class="box-title">{esc(i['title'])}</h2>
+  <p class="box-text">{ph(i['text'])}</p>
+</li>""" for i in b["items"])
     return f"""<section class="hero" aria-labelledby="hero-h">
   <p class="kicker">{ph(b['kicker'])}</p>
   <h1 id="hero-h">{esc(b['heading'])}</h1>
@@ -301,6 +305,7 @@ def design_inventory(c):
   <p class="kicker">{ph(inv['kicker'])}</p>
   <h1 id="hero-h">{esc(inv['heading'])}</h1>
   <p class="lead">{ph(inv['lead'])}</p>
+  <p class="hero-call">{ph(c["hero"]["call"])}</p>
 </section>
 {quote_section(c, checklist)}"""
 

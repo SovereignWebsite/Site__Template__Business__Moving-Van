@@ -16,7 +16,8 @@
     "kicker": "Man and van, [Area you cover]",
     "heading": "Moving a few things, a flat or a whole house?",
     "lead": "A small family firm with a van and a pair of careful hands. See what fits in the van, then ask for a quote.",
-    "cta": "Get a quote"
+    "cta": "Get a quote",
+    "call": "Or call [Phone number]"
   },
   "van": {
     "title": "The side of the van",
@@ -39,7 +40,7 @@
       {
         "id": "house",
         "label": "A house",
-        "note": "the whole van, or [more trips]",
+        "note": "the whole van; a bigger house may need more than one trip",
         "share": 1.0
       }
     ],
@@ -226,7 +227,7 @@
   "boxes": {
     "kicker": "Man and van, [Area you cover]",
     "heading": "What we move, box by box",
-    "lead": "Open a box to see what is inside.",
+    "lead": "Every box is open: what we move, and what it costs.",
     "items": [
       {
         "label": "THIS WAY UP",
@@ -266,6 +267,7 @@
     "lead": "Tick the rooms you are moving. Your list goes with your quote request, so we can give you a price.",
     "rooms_legend": "Rooms",
     "rooms": [
+      "Just a few items",
       "Kitchen",
       "Living room",
       "Dining room",
@@ -285,7 +287,7 @@
       "Help with packing",
       "Things to clear and take away"
     ],
-    "summary": "Rooms ticked:",
+    "summary": "Ticked:",
     "no_price": "No price yet: the owner sets the prices. We reply with a price for your list."
   },
   "card": {
