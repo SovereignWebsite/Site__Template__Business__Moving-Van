@@ -12,10 +12,10 @@
 .van .ph-box{fill:var(--ph-bg);stroke:var(--ph-fg);stroke-width:2;stroke-dasharray:8 6}
 .van .panel-name{font:700 38px system-ui,sans-serif;fill:var(--ph-fg)}
 .van .panel-line{font:600 24px system-ui,sans-serif;fill:var(--ph-fg)}
-.van .load-label{font:600 20px system-ui,sans-serif;fill:#1d1d1b}
+.van .load-label{font:600 26px system-ui,sans-serif;fill:#1d1d1b}
 .van .load-label.beside{fill:var(--fg)}
 .load-small{fill:var(--small);background:var(--small)}.load-flat{fill:var(--flat);background:var(--flat)}.load-house{fill:var(--house);background:var(--house)}
 @media (prefers-color-scheme:dark){.van .load-label{fill:#fff}.van .load-label.beside{fill:var(--fg)}}
 .loads{list-style:none;padding:0;margin:.8rem 0 .3rem;display:flex;flex-wrap:wrap;gap:.4rem 1.5rem}
 .swatch{display:inline-block;width:1rem;height:1rem;border-radius:3px;margin-right:.4rem;vertical-align:-.15rem}
-@media (max-width:599px){.van .load-label{font-size:24px}}
+@media (max-width:599px){.van .load-label{font-size:34px}.van .panel-line{font-size:30px}}

@@ -15,7 +15,7 @@
   "hero": {
     "kicker": "Man and van, [Area you cover]",
     "heading": "Moving a few things, a flat or a whole house?",
-    "lead": "A small family firm with a van and a pair of careful hands. See what fits in the van, then ask for a quote.",
+    "lead": "[One line about the firm, in the owner's words]. See what fits in the van, then ask for a quote.",
     "cta": "Get a quote",
     "call": "Or call [Phone number]"
   },
@@ -70,7 +70,7 @@
         "text": "Clearing out a loft, a garage or a room you are not keeping."
       }
     ],
-    "price_line": "Prices from [£ from]. The owner sets the real prices.",
+    "price_line": "Single items from [£ price], flat moves from [£ price], house moves from [£ price]. The owner sets the real prices.",
     "cover_note": "Insurance and licences: [details to be supplied by the owner]."
   },
   "how": {
@@ -257,7 +257,7 @@
       {
         "label": "PRICES",
         "title": "What it costs",
-        "text": "Prices from [£ from]. The owner sets the real prices."
+        "text": "Single items from [£ price], flat moves from [£ price], house moves from [£ price]. The owner sets the real prices."
       }
     ]
   },
@@ -296,7 +296,7 @@
     "facts": [
       "Single items, flat moves and house moves",
       "Packing and clearances",
-      "Prices from [£ from]",
+      "Single items, flat moves and house moves from [£ price] each",
       "Insurance and licences: [details to be supplied by the owner]"
     ],
     "call": "For a quote, call or email:",

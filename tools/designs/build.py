@@ -190,7 +190,7 @@ def how_section(c):
 
 def van_svg(v):
     """The side of the van: the firm's name on the panel, the load space drawn as three bands to scale."""
-    x0, w, y0, row = 60, 470, 140, 30
+    x0, w, y0, row = 60, 470, 142, 40
     bands = []
     for i, load in enumerate(sorted(v["loads"], key=lambda l: -l["share"])):
         y = y0 + i * (row + 6)
@@ -198,22 +198,22 @@ def van_svg(v):
         inside = bw >= 170  # a short band puts its label beside it, so the text never spills over the colour
         bands.append(
             f'<rect class="load load-{esc(load["id"])}" x="{x0}" y="{y}" width="{bw}" height="{row}" rx="4"/>'
-            f'<text class="load-label{"" if inside else " beside"}" x="{x0 + 10 if inside else x0 + bw + 10}" y="{y + 22}">{esc(load["label"])}</text>'
+            f'<text class="load-label{"" if inside else " beside"}" x="{x0 + 10 if inside else x0 + bw + 10}" y="{y + 29}">{esc(load["label"])}</text>'
         )
-    return f"""<svg class="van" viewBox="0 0 800 318" role="img" aria-labelledby="van-t van-d">
+    return f"""<svg class="van" viewBox="0 0 800 352" role="img" aria-labelledby="van-t van-d">
 <title id="van-t">{esc(v['title'])}</title>
 <desc id="van-d">{esc(v['desc'])}</desc>
-<rect class="body" x="30" y="30" width="530" height="225" rx="14"/>
+<rect class="body" x="30" y="30" width="530" height="258" rx="14"/>
 <rect class="ph-box" x="135" y="50" width="320" height="82" rx="8"/>
 <text class="panel-name" x="295" y="86" text-anchor="middle">{esc(v['panel_name'])}</text>
 <text class="panel-line" x="295" y="118" text-anchor="middle">{esc(v['panel_line'])}</text>
 {''.join(bands)}
-<path class="cab" d="M560 255 V95 h110 q22 0 36 22 l44 70 q8 13 8 28 V255 Z"/>
+<path class="cab" d="M560 288 V95 h110 q22 0 36 22 l44 70 q8 13 8 28 V288 Z"/>
 <path class="window" d="M585 115 h78 q12 0 19 11 l36 58 h-133 Z"/>
-<rect class="bumper" x="560" y="240" width="210" height="15" rx="6"/>
-<circle class="wheel" cx="160" cy="278" r="30"/><circle class="hub" cx="160" cy="278" r="12"/>
-<circle class="wheel" cx="660" cy="278" r="30"/><circle class="hub" cx="660" cy="278" r="12"/>
-<line class="road" x1="0" y1="312" x2="800" y2="312"/>
+<rect class="bumper" x="560" y="273" width="210" height="15" rx="6"/>
+<circle class="wheel" cx="160" cy="311" r="30"/><circle class="hub" cx="160" cy="311" r="12"/>
+<circle class="wheel" cx="660" cy="311" r="30"/><circle class="hub" cx="660" cy="311" r="12"/>
+<line class="road" x1="0" y1="346" x2="800" y2="346"/>
 </svg>"""
 
 
@@ -280,6 +280,7 @@ def design_boxes(c):
   <p class="kicker">{ph(b['kicker'])}</p>
   <h1 id="hero-h">{esc(b['heading'])}</h1>
   <p class="lead">{ph(b['lead'])}</p>
+  <p class="hero-call">{ph(c["hero"]["call"])}</p>
 </section>
 <ul class="stack">{boxes}</ul>
 <p class="cover">{ph(c['services']['cover_note'])}</p>
@@ -306,6 +307,8 @@ def design_inventory(c):
   <h1 id="hero-h">{esc(inv['heading'])}</h1>
   <p class="lead">{ph(inv['lead'])}</p>
   <p class="hero-call">{ph(c["hero"]["call"])}</p>
+  <p class="hero-price">{ph(c['services']['price_line'])}</p>
+  <p>{ph(c['services']['cover_note'])}</p>
 </section>
 {quote_section(c, checklist)}"""
 

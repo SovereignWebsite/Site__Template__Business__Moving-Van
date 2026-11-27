@@ -13,7 +13,9 @@
 
 - Round 1 from design.b.rounds (rated 3, M3; https://design.agents.sovereignweb.site/reviews-moving-van-2026-11-27-round-1.html), all five asks done: the boxes open with titles, text and prices on show; the phone number in the hero of The van, Moving day and The inventory; "Just a few items" first on the inventory; Moving day's price in its hero; the house note says a bigger house may need more than one trip, in place of "[more trips]".
 
+- Round 2 (rated 4, M4; https://design.agents.sovereignweb.site/reviews-moving-van-2026-11-27-round-2.html), all five asks done: the phone number in The boxes' first screen; price and insurance lines on the inventory; the firm's one-line description is now a placeholder in the owner's words, not a claim; prices per service ([£ price] for single items, flats and houses); the van's painted labels larger on a phone.
+
 ## Next
-1. Round 2 with design.b.rounds.
+1. Round 3 with design.b.rounds.
 2. Admin area like Kate's, and a guided tour with a PDF (learnings-from-lee-elle.md, items 8 to 11).
 3. Register with hub.b; an own share card in place of the seed's.
